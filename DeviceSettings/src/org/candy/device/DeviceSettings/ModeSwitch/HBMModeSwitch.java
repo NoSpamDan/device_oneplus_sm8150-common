@@ -1,5 +1,5 @@
 /*
-* Copyright (C) 2017 The OmniROM Project
+* Copyright (C) 2016 The OmniROM Project
 *
 * This program is free software: you can redistribute it and/or modify
 * it under the terms of the GNU General Public License as published by
@@ -15,18 +15,17 @@
 * along with this program. If not, see <http://www.gnu.org/licenses/>.
 *
 */
-package com.aosip.device.DeviceSettings;
+package org.candy.device.DeviceSettings;
 
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.os.SystemProperties;
 import androidx.preference.Preference;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.PreferenceManager;
 
-public class NightModeSwitch implements OnPreferenceChangeListener {
+public class HBMModeSwitch implements OnPreferenceChangeListener {
 
-    private static final String FILE = "/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/night_mode";
+    private static final String FILE = "/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/hbm";
 
     public static String getFile() {
         if (Utils.fileWritable(FILE)) {
@@ -46,7 +45,7 @@ public class NightModeSwitch implements OnPreferenceChangeListener {
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         Boolean enabled = (Boolean) newValue;
-        Utils.writeValue(getFile(), enabled ? "1" : "0");
+        Utils.writeValue(getFile(), enabled ? "5" : "0");
         return true;
     }
 }

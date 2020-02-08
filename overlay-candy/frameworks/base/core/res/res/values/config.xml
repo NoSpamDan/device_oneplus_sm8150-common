@@ -30,7 +30,7 @@
 
     <!-- Names of the key handler classes -->
     <string-array name="config_deviceKeyHandlerClasses" translatable="false">
-        <item>com.aosip.device.DeviceSettings.KeyHandler</item>
+        <item>org.candy.device.DeviceSettings.KeyHandler</item>
         <item>org.lineageos.camerahelper.KeyHandler</item>
     </string-array>
 
