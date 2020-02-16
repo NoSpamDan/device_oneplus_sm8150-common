@@ -19,11 +19,11 @@ PRODUCT_COPY_FILES += \
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-potato
+    $(LOCAL_PATH)/overlay-candy
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-potato/packages/apps/Snap
+    $(LOCAL_PATH)/overlay-candy/packages/apps/Snap
 
 # A/B
 AB_OTA_UPDATER := true
@@ -447,9 +447,9 @@ PRODUCT_PACKAGES += \
     thermal.msmnile
 
 # tri-state key
-PRODUCT_PACKAGES += \
-    KeyHandler \
-    tri-state-key_daemon
+#RODUCT_PACKAGES += \
+#    KeyHandler \
+#    tri-state-key_daemon
 
 # Update engine
 PRODUCT_PACKAGES += \

@@ -26,7 +26,7 @@
 
     <!-- Names of the key handler classes -->
     <string-array name="config_deviceKeyHandlerClasses" translatable="false">
-        <item>com.potato.settings.slider_settings.KeyHandler</item>
+        <item>org.candy.settings.slider_settings.KeyHandler</item>
         <item>org.lineageos.camerahelper.KeyHandler</item>
     </string-array>
 

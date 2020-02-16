@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.potato.settings.slider_settings;
+package org.candy.settings.slider_settings;
 
 import android.os.Bundle;
 import android.preference.PreferenceActivity;

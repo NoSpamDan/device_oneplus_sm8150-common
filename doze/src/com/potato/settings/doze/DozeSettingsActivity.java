@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.potato.settings.doze;
+package org.candy.settings.doze;
 
 import android.os.Bundle;
 import android.preference.PreferenceActivity;

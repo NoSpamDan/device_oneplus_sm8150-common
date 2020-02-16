@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.potato.settings.slider_settings;
+package org.candy.settings.slider_settings;
 
 import android.os.Bundle;
 import android.support.v14.preference.PreferenceFragment;
@@ -27,8 +27,8 @@ import android.support.v7.preference.PreferenceGroup;
 import android.text.TextUtils;
 import android.view.MenuItem;
 
-import com.android.internal.util.potato.FileUtils;
-import com.potato.settings.slider_settings.utils.Constants;
+import com.android.internal.util.candy.FileUtils;
+import org.candy.settings.slider_settings.utils.Constants;
 
 public class ButtonSettingsFragment extends PreferenceFragment
         implements OnPreferenceChangeListener {

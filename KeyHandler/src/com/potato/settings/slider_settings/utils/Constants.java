@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.potato.settings.slider_settings.utils;
+package org.candy.settings.slider_settings.utils;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.potato.settings.slider_settings;
+package org.candy.settings.slider_settings;
 
 import android.Manifest;
 import android.app.NotificationManager;
@@ -43,7 +43,7 @@ import android.view.KeyEvent;
 import com.android.internal.os.DeviceKeyHandler;
 import com.android.internal.util.ArrayUtils;
 
-import com.potato.settings.slider_settings.utils.Constants;
+import org.candy.settings.slider_settings.utils.Constants;
 
 public class KeyHandler implements DeviceKeyHandler {
 
