@@ -68,6 +68,9 @@
     <!-- FOD fingerprint scanner -->
     <bool name="config_needCustomFODView">true</bool>
 
+    <!-- Need this for applocker and face unlock -->
+    <bool name="config_supportsInDisplayFingerprint">true</bool>
+
     <!-- FOD icon dim-->
     <bool name="config_targetUsesInKernelDimming">true</bool>
 
