@@ -76,4 +76,7 @@
 
     <!-- Does the device have a notification led -->
     <bool name="config_hasNotificationLed">false</bool>
+
+    <!-- Device has a notch -->
+    <bool name="config_haveNotch">true</bool>
 </resources>
