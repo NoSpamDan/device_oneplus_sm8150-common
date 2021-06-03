@@ -75,6 +75,17 @@
             android:theme="@style/AppTheme">
         </activity>
 
+        <activity
+            android:name="com.oneplus.sound.tuner.panoramic.DolbyPanoramicSoundActivity"
+            android:exported="true"
+            android:label="@string/tile_dolby_atmos_title"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <action android:name="com.oneplus.sound.tuner.panoramic.DolbyPanoramicSoundActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
         <receiver android:name="org.candy.device.DeviceSettings.Startup" >
             <intent-filter android:priority="100" >
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
@@ -122,11 +133,20 @@
                     android:name="android.service.quicksettings.action.QS_TILE"/>
             </intent-filter>
         </service>
-
-        <service android:name="org.candy.device.DeviceSettings.FPSInfoService"
-                android:exported="false">
+        <service
+            android:name="org.candy.device.DeviceSettings.DolbyAtmosTileService"
+            android:icon="@drawable/ic_dolby_atmos"
+            android:label="@string/tile_dolby_atmos_title"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action
+                    android:name="android.service.quicksettings.action.QS_TILE"/>
+            </intent-filter>
         </service>
-
+        <service
+            android:name="org.candy.device.DeviceSettings.FPSInfoService"
+            android:exported="false">
+        </service>
         <service
             android:name=".FPSTileService"
             android:icon="@drawable/ic_fps"
@@ -137,7 +157,6 @@
                     android:name="android.service.quicksettings.action.QS_TILE"/>
             </intent-filter>
         </service>
-
         <service android:name="org.candy.device.DeviceSettings.HBMModeService"
             android:exported="false" />
 
